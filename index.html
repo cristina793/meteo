@@ -2,19 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,200;1,100;1,200;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,200;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    
     <title>Document</title>
 </head>
 <body>
     <div class="app">
     <header>
-       <form>
-        <input type="search" placeholder="Enter a city.." required class="search-form-input"/>
+       <form class="search-form" id="search-form">
+        <input type="search" placeholder="Enter a city.." required class="search-form-input" id="search-form-input"/>
         <input type="submit" value="Search" class="search-form-button">
        </form>
     </header>
@@ -22,7 +25,7 @@
     <div class="weather-app-data">
 
 <div>
-    <h1 class="weather-app-city">Paris </h1>
+    <h1 class="weather-app-city" id="city">Paris </h1>
 <p class="weather-app-details">
     Tuesday 9:33, overcast clouds
 <br />
@@ -38,8 +41,7 @@ Humidity: <strong >91%</strong>
 <div class="weather-app-temperature">8 </div>
 <div class="weather-app-unit">°C</div>  
 </div>
-
-
+</div>
     </main>
 
     <footer> 
@@ -48,5 +50,6 @@ Humidity: <strong >91%</strong>
     
 </footer>
 </div>
+<script src="src/index.js"></script>
 </body>
 </html>
